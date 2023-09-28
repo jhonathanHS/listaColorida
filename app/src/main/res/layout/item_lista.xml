@@ -6,25 +6,84 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/lblNome"
-        android:layout_width="206dp"
+        android:id="@+id/txtTexto"
+        android:layout_width="384dp"
         android:layout_height="37dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="9dp"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="108dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:text="TEXTO A INSERIR:"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/lblEmail"
-        android:layout_width="85dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
+
+    <RadioGroup
+        android:layout_width="257dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="138dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblNome" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/radVermelho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VERMELHO" />
+
+        <RadioButton
+            android:id="@+id/radVerde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VERDE" />
+
+        <RadioButton
+            android:id="@+id/radAzul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AZUL" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="36dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:text="COR:"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTexto" />
+
+    <Button
+        android:id="@+id/btnInsere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insere"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <Button
+        android:id="@+id/btnCancela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancela"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="277dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

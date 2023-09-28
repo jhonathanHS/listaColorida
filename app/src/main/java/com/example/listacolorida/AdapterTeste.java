@@ -33,7 +33,7 @@ public class AdapterTeste extends CursorAdapter {
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
         // recuperando os objetos gráficos de dentro da view recebid
-        TextView lblNome = view.findViewById(R.id.lblNome);
+        TextView lblNome = view.findViewById(R.id.txtTexto);
         TextView lblEmail = view.findViewById(R.id.lblEmail);
         // o cursor já vem posicionado na linha correta...
         // basta recuperarmos os dados

@@ -10,9 +10,6 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
     // referência para o banco de dados
     SQLiteDatabase bd;
@@ -33,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         // ligando atributos aos ID's na interface
         txtNome = findViewById(R.id.txtNome);
         txtEmail = findViewById(R.id.txtEmail);
-        btnInsere = findViewById(R.id.btnInsere);
+        btnInsere = findViewById(R.id.btnInsereTexto);
         lista = findViewById(R.id.lista);
         // configurando escutador no botão insere
         btnInsere.setOnClickListener(new EscutadorInsere());
