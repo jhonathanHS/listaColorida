@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ColorActivity">
 
-    <TextView
+    <EditText
         android:id="@+id/txtTexto"
         android:layout_width="384dp"
-        android:layout_height="37dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginTop="7dp"
         android:layout_marginEnd="9dp"
@@ -30,6 +31,7 @@
 
 
     <RadioGroup
+        android:id="@+id/radGroup"
         android:layout_width="257dp"
         android:layout_height="147dp"
         android:layout_marginStart="16dp"
@@ -73,17 +75,23 @@
         android:id="@+id/btnInsere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="12dp"
         android:text="Insere"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="277dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radGroup" />
 
     <Button
         android:id="@+id/btnCancela"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
         android:text="Cancela"
-        tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="277dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInsere"
+        app:layout_constraintTop_toBottomOf="@+id/radGroup" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
